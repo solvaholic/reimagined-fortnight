@@ -37,37 +37,11 @@
           <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
           {% endif %} -->
 
-          <div class="link-wrapper">
-            <style scoped>
-              ul.link a {
-                color:var(--clr-h1-and-bold);
-                text-decoration:none;
-              }
-
-              ul.link a:hover, a:focus {
-                color: var(--clr-a-text-hvr);
-              }
-            </style>
-            <ul class="link">
-              <li><a href="https://github.com/solvaholic" rel="author"><i class="fab fa-github"></i> GitHub</a></li>
-              <li><a href="https://keybase.io/solvaholic" rel="external"><i class='far fa-comments'></i> Keybase</a></li>
-              <li><a href="https://www.linkedin.com" rel="external"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-              <li><a href="https://twitter.com" rel="external"><i class="fab fa-twitter"></i> Twitter</a></li>
-              <li><a href="https://solvaholic.github.io" rel="external"><i class="fas fa-pencil-alt"></i> Blog</a></li>
-              <li><a href="https://github.com/solvaholic/reimagined-fortnight"><i class="far fa-bookmark"></i> This Repository</a></li>
-            </ul>
-          </div>
+          {% include sidebar.html %}
 
         </header>
         
-        <div class="link-wrapper-mobile">
-          <a href="https://github.com/solvaholic" rel="author">[GitHub]</a>
-          <span style="margin-left: 5px;"></span>
-          <a href="https://keybase.io/solvaholic" rel="external">[Keybase]</a>
-          <span style="margin-left: 5px;"></span>
-          <a href="https://github.com/solvaholic/reimagined-fortnight">[This Repository]</a>
-          <span style="margin-left: 5px;"></span>
-        </div>
+        {% include links-mobile.html %}
 
         <div class="sidebar-footer">
           {%- include footer.html -%}
