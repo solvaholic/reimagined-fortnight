@@ -1,6 +1,6 @@
-title: Reimagined Fortnight
-logo: /assets/img/logo.png
-description: Demonstrate how to modify the default pages-themes/minimal to look like bdhu/bdhu.github.io
+title: Re- imagined Fortnight
+logo:
+description: Demonstrate how to modify the default pages-themes/minimal to look more like bdhu/bdhu.github.io
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
